@@ -39,7 +39,9 @@ const UserInfo: React.FC<UserInfoProps> = ({ userData, setUserData }) => {
             placeholder="Sobrenome"
             className="flex-1 p-3 border border-cyan-400 focus:border-cyan-600 outline-none rounded-md"
             value={userData.sobrenome} // Valor do input é o estado do sobrenome
-            onChange={(e) => setUserData({ ...userData, sobrenome: e.target.value })} // Atualiza o estado ao mudar o valor
+            onChange={(e) =>
+              setUserData({ ...userData, sobrenome: e.target.value })
+            } // Atualiza o estado ao mudar o valor
             required
           />
         </div>
@@ -70,7 +72,9 @@ const UserInfo: React.FC<UserInfoProps> = ({ userData, setUserData }) => {
             placeholder="Órgão Expeditor"
             className="p-3 border border-cyan-400 focus:border-cyan-600 outline-none rounded-md flex-1"
             value={userData.orgaoExpeditor} // Valor do input é o estado do órgão expedidor
-            onChange={(e) => setUserData({ ...userData, orgaoExpeditor: e.target.value })} // Atualiza o estado ao mudar o valor
+            onChange={(e) =>
+              setUserData({ ...userData, orgaoExpeditor: e.target.value })
+            } // Atualiza o estado ao mudar o valor
           />
         </div>
 
@@ -81,7 +85,9 @@ const UserInfo: React.FC<UserInfoProps> = ({ userData, setUserData }) => {
             <select
               className="outline-none p-2 rounded-sm text-cyan-800"
               value={userData.genero} // Valor do select é o estado do gênero
-              onChange={(e) => setUserData({ ...userData, genero: e.target.value })} // Atualiza o estado ao mudar o valor
+              onChange={(e) =>
+                setUserData({ ...userData, genero: e.target.value })
+              } // Atualiza o estado ao mudar o valor
               required
             >
               <option value="">Selecione</option>
@@ -101,7 +107,9 @@ const UserInfo: React.FC<UserInfoProps> = ({ userData, setUserData }) => {
             name="dataNascimento"
             className="p-3 border text-gray-500 border-cyan-400 focus:border-cyan-600 outline-none rounded-md flex-1"
             value={userData.dataNascimento} // Valor do input é o estado da data de nascimento
-            onChange={(e) => setUserData({ ...userData, dataNascimento: e.target.value })} // Atualiza o estado ao mudar o valor
+            onChange={(e) =>
+              setUserData({ ...userData, dataNascimento: e.target.value })
+            } // Atualiza o estado ao mudar o valor
             required
           />
           <input
@@ -111,7 +119,9 @@ const UserInfo: React.FC<UserInfoProps> = ({ userData, setUserData }) => {
             maxLength={11}
             className="p-3 border border-cyan-400 focus:border-cyan-600 outline-none rounded-md"
             value={userData.telefone} // Valor do input é o estado do telefone
-            onChange={(e) => setUserData({ ...userData, telefone: e.target.value })} // Atualiza o estado ao mudar o valor
+            onChange={(e) =>
+              setUserData({ ...userData, telefone: e.target.value })
+            } // Atualiza o estado ao mudar o valor
             required
           />
         </div>
@@ -124,7 +134,9 @@ const UserInfo: React.FC<UserInfoProps> = ({ userData, setUserData }) => {
             placeholder="E-mail"
             className="p-3 border border-cyan-400 focus:border-cyan-600 outline-none rounded-md w-full"
             value={userData.email} // Valor do input é o estado do e-mail
-            onChange={(e) => setUserData({ ...userData, email: e.target.value })} // Atualiza o estado ao mudar o valor
+            onChange={(e) =>
+              setUserData({ ...userData, email: e.target.value })
+            } // Atualiza o estado ao mudar o valor
             required
           />
           <input
@@ -134,7 +146,9 @@ const UserInfo: React.FC<UserInfoProps> = ({ userData, setUserData }) => {
             minLength={8}
             className="p-3 border border-cyan-400 focus:border-cyan-600 outline-none rounded-md w-full"
             value={userData.senha} // Valor do input é o estado da senha
-            onChange={(e) => setUserData({ ...userData, senha: e.target.value })} // Atualiza o estado ao mudar o valor
+            onChange={(e) =>
+              setUserData({ ...userData, senha: e.target.value })
+            } // Atualiza o estado ao mudar o valor
             required
           />
         </div>

@@ -13,10 +13,10 @@ export default {
       // Adicionando um padrão de fundo personalizado
       backgroundImage: {
         // Nome do padrão de fundo que será utilizado nas classes de utilitários
-        'custom-pattern': "url('/src/assets/Error_404.jpg')",        
+        "custom-pattern": "url('/src/assets/Error_404.jpg')",
       },
     },
   },
   // Lista de plugins adicionais do Tailwind (nenhum plugin está sendo usado no momento)
   plugins: [],
-}
+};

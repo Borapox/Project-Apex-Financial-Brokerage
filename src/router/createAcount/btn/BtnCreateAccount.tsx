@@ -9,7 +9,7 @@ const BtnCreateAccount: React.FC<BotaoProps> = ({ titleBtn, onClick }) => {
   return (
     <button
       onClick={onClick} // Define a função a ser chamada quando o botão é clicado
-      className='
+      className="
         cursor-pointer
         bg-lime-400
         hover:bg-lime-600
@@ -21,12 +21,12 @@ const BtnCreateAccount: React.FC<BotaoProps> = ({ titleBtn, onClick }) => {
         h-11
         rounded-sm
         shadow-gray-700
-      '
+      "
     >
       {titleBtn} {/* O texto do botão é definido pela propriedade titleBtn */}
     </button>
   );
-}
+};
 
 // Exporta o componente para uso em outros arquivos
 export default BtnCreateAccount;
